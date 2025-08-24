@@ -1,0 +1,20 @@
+name: WeHead
+version: '${project.version}'
+main: me.wethink.weHeads.WeHeadPlugin
+api-version: '1.20'
+authors: [WeThink]
+description: Custom head plugin with Base64 texture support and Folia compatibility
+website: https://github.com/wethink/we-heads
+
+folia-supported: true
+
+commands:
+  wehead:
+    description: Give custom heads using Base64 texture
+    usage: /wehead give <base64_texture>
+    permission: wehead.give
+
+permissions:
+  wehead.give:
+    description: Allows using the /wehead give command
+    default: op
